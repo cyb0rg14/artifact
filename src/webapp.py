@@ -23,12 +23,24 @@ generate_article = st.button("Generate Article")
 if topic and generate_article:
     # extract fields from topic
     extract_topic = topic.split("--")
-    inputs = {
-        "topic": extract_topic[0],
-        "user": extract_topic[1],
-        "words": extract_topic[2],
-    }
-
+    if len(extract_topic) == 3:
+        inputs = {
+            "topic": extract_topic[0],
+            "user": extract_topic[1],
+            "words": extract_topic[2],
+        }
+    elif len(extract_topic) == 2:
+        inputs = {
+            "topic": extract_topic[0],
+            "user": extract_topic[1],
+            "words": 500,
+        }
+    elif len(extraxt_topic) == 1:
+        inputs = {
+            "topic": extract_topic[0],
+            "user": "general public",
+            "words": 500,
+        }
     # Display loading GIF while generating the article
     loading_placeholder = st.empty()
     loading_html = f'<div style="display: flex; justify-content: center; align-items: center;"><img src="{st.secrets["loading_gif_url"]}" alt="Loading" width="300px" height="300px"></div>'
