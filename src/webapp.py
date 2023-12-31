@@ -35,7 +35,7 @@ if topic and generate_article:
             "user": extract_topic[1],
             "words": 500,
         }
-    elif len(extraxt_topic) == 1:
+    elif len(extract_topic) == 1:
         inputs = {
             "topic": extract_topic[0],
             "user": "general public",
