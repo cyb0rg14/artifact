@@ -37,6 +37,7 @@ def sidebar_conf():
     sidebar.info(examples[1])
     sidebar.markdown("* If you wanna keep it to certain words")
     sidebar.info(examples[2])
+    sidebar.caption(afterinfo)
     sidebar.divider()
     sidebar.markdown(contactInfo)
     sidebar.markdown("# Made with ❤️ by cyb0rg14")
