@@ -20,7 +20,7 @@ And you need to use parameters in order you can't use --300 before --kid
 """
 contactInfo = """
 ## For any Queries:-
-### You could connect with me on [LinkedIn](https://www.linkedin.com/in/datamaven14/) or could mail me [here](mailto:techtitanbot@gmail.com)
+### You could connect with me on [LinkedIn](https://www.linkedin.com/in/cyb0rg14/) or could mail me [here](mailto:cyborgdomain@proton.me)
 """
 
 examples = [example1, example2, example3]
